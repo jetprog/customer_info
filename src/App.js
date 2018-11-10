@@ -6,8 +6,46 @@ class App extends Component {
   constructor (props) {
     super(props)
     this.state = {
-
+      name: '',
+      address: '',
+      email: '',
+      phone: '',
+      account: [],
+      squareFootHome: '',
+      homeValue: '',
+      newConstruction: '',
+      UtilityCompany: '',
+      heating: '',
+      // ?????
+      combinedIncome: '',
+      numberYearsAdress: '',
+      statusMatrimonial: '',
+      annualLiabillities: '',
+      assets: '',
+      bank: '',
+      numberYearBank: '',
+      totalBalance: '',
+      communication: '',
+      salesNotes: '',
+      accountManagement: '',
+      signedDate: '',
+      price: '',
+      sytemPrice: '',
+      adders: '',
+      details: '',
+      salesPerson: '',
+      sellers: '',
+      reffered: '',
+      loadSource: '',
+      describeBrandRecognition: '',
+      uploadedDocuments: []
     }
+
+    this.handleChange = this.handleChange.bind(this)
+  }
+
+  handleChange (e) {
+    this.setState({ [e.target.name]: e.target.value})
   }
 
   render() {
@@ -20,11 +58,26 @@ class App extends Component {
 
         <div className="basic_info">
           <h2>Basic Info</h2>
-          <div>Name: <input type="text"/></div>
-          <div>Address: <input type="text"/></div>
-          <div>Email: <input type="text"/></div>
-          <div>Phone: <input type="text"/></div>
-          <div>Account: <input type="text"/></div>
+          <div>
+            Name: <input type="text" value={this.state.name}
+            name="name" onChange={this.handleChange}/>
+          </div>
+          <div>
+            Address: <input type="text" value={this.state.address}
+            name="address" onChange={this.handleChange}/>
+          </div>
+          <div>
+            Email: <input type="text" value={this.state.email}
+            name="email" onChange={this.handleChange}/>
+          </div>
+          <div>
+            Phone: <input type="text" value={this.state.phone}
+            name="phone" onChange={this.handleChange}/>
+          </div>
+          <div>
+            Account: <input type="text" value={this.state.account}
+            name="account" onChange={this.handleChange}/>
+          </div>
         </div>
 
         <div className="home_info">
@@ -111,7 +164,10 @@ class App extends Component {
           <div><input type="checkbox"/> 4_ Correct NMIN BC</div>
           <div><input type="checkbox"/> 5_ Home Insurance Policy</div>
           <div><input type="checkbox"/> 6_ Latest Propose</div>
+          <div><button type="button">Upload Document</button></div>
         </div>
+
+        <div><br/><button type="button">Done</button></div>
 
       </div>
     );
