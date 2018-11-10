@@ -10,7 +10,7 @@ class App extends Component {
       address: '',
       email: '',
       phone: '',
-      account: [],
+      account: '',
       squareFootHome: '',
       homeValue: '',
       newConstruction: '',
@@ -18,7 +18,11 @@ class App extends Component {
       heating: '',
       // ?????
       combinedIncome: '',
+      debt: '',
+      crediStore: '',
       numberYearsAdress: '',
+      employer: '',
+      numberYearEmployer: '',
       statusMatrimonial: '',
       annualLiabillities: '',
       assets: '',
@@ -30,7 +34,7 @@ class App extends Component {
       accountManagement: '',
       signedDate: '',
       price: '',
-      sytemPrice: '',
+      systemPrice: '',
       adders: '',
       details: '',
       salesPerson: '',
@@ -38,7 +42,7 @@ class App extends Component {
       reffered: '',
       loadSource: '',
       describeBrandRecognition: '',
-      uploadedDocuments: []
+      // uploadedDocuments: []
     }
 
     this.handleChange = this.handleChange.bind(this)
@@ -46,6 +50,7 @@ class App extends Component {
 
   handleChange (e) {
     this.setState({ [e.target.name]: e.target.value})
+    console.log(e.target);
   }
 
   render() {
@@ -82,15 +87,26 @@ class App extends Component {
 
         <div className="home_info">
           <h2>Home Info</h2>
-          <div>Square Footage of Home <input type="text"/></div>
-          <div>Home Value: (Cost Estimate) <input type="text"/></div>
-          <div>New Construction? <input type="checkbox"/> Yes <input type="checkbox"/> No</div>
+          <div>Square Footage of Home <input type="text" value={this.state.squareFootHome}
+            name="squareFootHome" onChange={this.handleChange}/></div>
+          <div>Home Value: (Cost Estimate) <input type="text" value={this.state.homeValue}
+            name="homeValue" onChange={this.handleChange}/></div>
+          <div>New Construction?
+            <input type="checkbox" value="yes"
+            name="newConstruction" onChange={this.handleChange}/> Yes
+            <input type="checkbox" value="no"
+            name="newConstruction" onChange={this.handleChange}/> No</div>
         </div>
 
         <div className="home_info">
           <h2>Energy Info</h2>
           <div>Utility Company <select></select> </div>
-          <div>Account #: <input type="text"/> Heating: <input type="checkbox"/> Electric    <input type="checkbox"/> Propane</div>
+          <div>Account #:
+            <input type="text"/> Heating: <input type="checkbox" value='Electric'
+            name="heating" onChange={this.handleChange}/> Electric
+            <input type="checkbox" value='Propane'
+            name="heating" onChange={this.handleChange}/> Propane
+          </div>
           <div>
             <br/>12 Month Consumption:
             <br/>
@@ -103,57 +119,125 @@ class App extends Component {
 
         <div className="home_info">
           <h2>Financial Info</h2>
-          <div>Combined Income: <input type="text"/></div>
-          <div>Debt: <input type="text"/>  Credit Score: <input type="text"/></div>
-          <div>Number of Years at Address: <input type="text"/></div>
-          <div>Employer: <input type="text"/></div>
-          <div>Number of Years with Employer: <input type="text"/></div>
-          <div><input type="checkbox"/> Legally Married <input type="checkbox"/> Single</div>
-          <div>Annual Lia??? <input type="text"/></div>
-          <div>Assets: <input type="text"/></div>
-          <div>Bank: <input type="text"/></div>
-          <div># of Years at Bank: <input type="text"/></div>
-          <div>Total Balances: <input type="text"/></div>
+          <div>Combined Income: <input type="text" value={this.state.combinedIncome}
+            name="combinedIncome" onChange={this.handleChange} />
+          </div>
+          <div>
+            Debt: <input type="text" value={this.state.debt}
+            name="debt" onChange={this.handleChange}/>
+            Credit Score: <input type="text" value={this.state.crediStore}
+            name="crediStore" onChange={this.handleChange}/>
+          </div>
+          <div>
+            Number of Years at Address: <input type="text" value={this.state.numberYearsAdress}
+            name="numberYearsAdress" onChange={this.handleChange}/>
+          </div>
+          <div>
+            Employer: <input type="text" value={this.state.employer}
+            name="employer" onChange={this.handleChange}/>
+          </div>
+          <div>
+            Number of Years with Employer: <input type="text" value={this.state.numberYearEmployer}
+            name="numberYearEmployer" onChange={this.handleChange}/>
+          </div>
+          <div>
+            <input type="checkbox" value='Legally Married'
+            name="statusMatrimonial" onChange={this.handleChange}/> Legally Married
+            <input type="checkbox" value='Single'
+            name="statusMatrimonial" onChange={this.handleChange}/> Single
+          </div>
+          <div>
+            Annual Liabillities <input type="text" value={this.state.annualLiabillities}
+            name="annualLiabillities" onChange={this.handleChange}/>
+          </div>
+          <div>
+            Assets: <input type="text" value={this.state.assets}
+            name="assets" onChange={this.handleChange}/>
+          </div>
+          <div>
+            Bank: <input type="text" value={this.state.bank}
+            name="bank" onChange={this.handleChange}/>
+          </div>
+          <div>
+            # of Years at Bank: <input type="text" value={this.state.numberYearBank}
+            name="numberYearBank" onChange={this.handleChange}/>
+          </div>
+          <div>
+            Total Balances: <input type="text" value={this.state.totalBalance}
+            name="totalBalance" onChange={this.handleChange}/>
+          </div>
         </div>
 
         <div className="basic_info">
           <h2>Preferred Communication Method</h2>
           <div>
-            <input type="checkbox"/> Phone <input type="checkbox"/> Text <input type="checkbox"/> Email
+            <input type="checkbox" value='phone'
+            name="communication" onChange={this.handleChange}/> Phone
+            <input type="checkbox" value='Text'
+            name="communication" onChange={this.handleChange}/> Text
+            <input type="checkbox" value='Email'
+            name="emails" onChange={this.handleChange}/> Email
           </div>
         </div>
 
         <div className="home_info">
           <h2>Sales Notes</h2>
-          <textarea rows="10" cols="50">
+          <textarea rows="10" cols="50" value={this.state.salesNotes}
+            name="salesNotes" onChange={this.handleChange}>
           </textarea>
         </div>
 
         <div className="home_info">
           <h2>Account Management Notes</h2>
-          <textarea rows="10" cols="50">
+          <textarea rows="10" cols="50" value={this.state.accountManagement}
+            name="accountManagement" onChange={this.handleChange}>
           </textarea>
         </div>
 
         <div className="home_info">
           <h2>Project Info</h2>
-          <div>Signed Date: <input type="checkbox"/></div>
-          <div>Price: <input type="text"/> System Price <input type="text"/></div>
-          <div>Adders: <input type="text"/></div>
-          <div>Details: <input type="text"/></div>
+          <div>
+            Signed Date: <input type="date"/>
+          </div>
+          <div>
+            Price: <input type="text" value={this.state.price}
+            name="price" onChange={this.handleChange}/>
+            System Price: <input type="text" value={this.state.systemPrice}
+            name="systemPrice" onChange={this.handleChange}/>
+          </div>
+          <div>
+            Adders: <input type="text" value={this.state.adders}
+            name="adders" onChange={this.handleChange}/>
+          </div>
+          <div>
+            Details: <input type="text" value={this.state.details}
+            name="details" onChange={this.handleChange}/>
+          </div>
         </div>
 
         <div className="home_info">
           <h2>Sales Info</h2>
-          <div>Sales Person: <input type="text"/></div>
-          <div>Seller: <input type="text"/></div>
-          <div>Reffered by: <input type="text"/></div>
+          <div>
+            Sales Person: <input type="text" value={this.state.salesPerson}
+            name="salesPerson" onChange={this.handleChange}/>
+          </div>
+          <div>
+            Seller: <input type="text" value={this.state.sellers}
+            name="sellers" onChange={this.handleChange}/>
+          </div>
+          <div>
+            Reffered by: <input type="text" value={this.state.reffered}
+            name="reffered" onChange={this.handleChange}/>
+          </div>
         </div>
 
         <div className="home_info">
           <h2>Load Info</h2>
           <div>Load Source <select></select></div>
-          <div>Describe Brand Recognition: <input type="text"/> </div>
+          <div>
+            Describe Brand Recognition: <input type="text" value={this.state.describeBrandRecognition}
+            name="describeBrandRecognition" onChange={this.handleChange}/>
+          </div>
         </div>
 
         <div className="home_info">
