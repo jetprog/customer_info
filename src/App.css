@@ -1,5 +1,14 @@
+.container {
+  padding: 20px
+}
+
+
 .App {
   text-align: center;
+}
+
+h2 {
+  color: green;
 }
 
 .App-logo {
@@ -18,8 +27,9 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.basic_info {
+  display: flex;
+  flex-direction: column;
 }
 
 @keyframes App-logo-spin {
