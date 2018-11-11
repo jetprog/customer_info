@@ -34,6 +34,7 @@ input[type=text] {
   color: white;
 }
 
+
 .basic_info {
   display: flex;
   flex-direction: column;

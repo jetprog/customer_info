@@ -16,7 +16,9 @@ class App extends Component {
       newConstruction: '',
       UtilityCompany: '',
       heating: '',
-      // ?????
+      // jan: '',
+      // feb: '',
+      // mar: '',
       combinedIncome: '',
       debt: '',
       crediStore: '',
