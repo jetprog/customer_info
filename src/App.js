@@ -45,12 +45,25 @@ class App extends Component {
       // uploadedDocuments: []
     }
 
-    this.handleChange = this.handleChange.bind(this)
+    this.handleChange = this.handleChange.bind(this);
+    this.submit = this.submit.bind(this);
+
   }
 
   handleChange (e) {
     this.setState({ [e.target.name]: e.target.value})
     console.log(e.target);
+  }
+
+  submit (){
+    //Check if all input contains data
+    //Now just put some field example
+    if (this.state.name === '' || this.state.address === '') {
+      alert("Field can't be empty");
+    }
+    else {
+      alert("Success");
+    }
   }
 
   render() {
@@ -182,14 +195,14 @@ class App extends Component {
 
         <div className="home_info">
           <h2>Sales Notes</h2>
-          <textarea rows="10" cols="50" value={this.state.salesNotes}
+          <textarea rows="10" cols="50"
             name="salesNotes" onChange={this.handleChange}>
           </textarea>
         </div>
 
         <div className="home_info">
           <h2>Account Management Notes</h2>
-          <textarea rows="10" cols="50" value={this.state.accountManagement}
+          <textarea rows="10" cols="50"
             name="accountManagement" onChange={this.handleChange}>
           </textarea>
         </div>
@@ -251,7 +264,10 @@ class App extends Component {
           <div><button type="button">Upload Document</button></div>
         </div>
 
-        <div><br/><button type="button">Done</button></div>
+        <div><br/>
+          <button type="button" onClick={() => this.submit()}>
+          Done</button>
+        </div>
 
       </div>
     );
