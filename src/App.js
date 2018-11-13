@@ -144,14 +144,16 @@ class App extends Component {
             name="heating" onChange={this.handleChange}/> Propane
           </div>
 
-          {/*<div>
-            <br/>12 Month Consumption:
+          <div>
+            12 Month Consumption:
             <br/>
-            <div>Jan: <input type="text"/> May: <input type="text"/> Sep: <input type="text"/></div>
-            <div>Feb: <input type="text"/> Jun: <input type="text"/> Oct: <input type="text"/></div>
-            <div>Mar: <input type="text"/> Jul: <input type="text"/> Nov: <input type="text"/></div>
-            <div>Apr: <input type="text"/> Aug: <input type="text"/> Dec: <input type="text"/></div>
-          </div>*/}
+            <div className="basic">
+              Jan: <input type="text"/> May: <input type="text"/> Sep: <input type="text"/>
+            </div>
+            <div className="basic">Feb: <input type="text"/> Jun: <input type="text"/> Oct: <input type="text"/></div>
+            <div className="basic">Mar: <input type="text"/> Jul: <input type="text"/> Nov: <input type="text"/></div>
+            <div className="basic">Apr: <input type="text"/> Aug: <input type="text"/> Dec: <input type="text"/></div>
+          </div>
         </div>
 
         <div>
@@ -162,12 +164,22 @@ class App extends Component {
             name="combinedIncome" onChange={this.handleChange} />
           </div>
 
-          <div className="basic">
-            <label>Debt: </label>
-            <input type="text" value={this.state.debt}
-            name="debt" onChange={this.handleChange}/>
-            Credit:<input type="text" value={this.state.crediStore}
-            name="crediStore" onChange={this.handleChange}/>
+          <div className="basic_long">
+            <div>
+              <label>Debt: </label>
+            </div>
+            <div>
+              <input type="text" value={this.state.debt}
+              name="debt" onChange={this.handleChange}/>
+            </div>
+
+            <div>
+              <label>Credit Score: </label>
+            </div>
+            <div>
+              <input type="text" styles={"width: 300px;"} value={this.state.crediStore}
+              name="crediStore" onChange={this.handleChange}/>
+            </div>
           </div>
 
           <div className="basic">
@@ -182,7 +194,7 @@ class App extends Component {
             name="employer" onChange={this.handleChange}/>
           </div>
 
-          <div>
+          <div className="basic">
             <label>Number of Years with Employer: </label>
             <input type="text" value={this.state.numberYearEmployer}
             name="numberYearEmployer" onChange={this.handleChange}/>
@@ -208,7 +220,7 @@ class App extends Component {
           </div>
 
           <div className="basic">
-            <label>Bank Info: </label>
+            <label>Bank: </label>
             <input type="text" value={this.state.bank}
             name="bank" onChange={this.handleChange}/>
           </div>
@@ -259,12 +271,21 @@ class App extends Component {
             <input type="date"/>
           </div>
 
-          <div className="basic">
-            <label>Price: </label>
-            <input type="text" value={this.state.price}
-            name="price" onChange={this.handleChange}/>
-            System: <input type="text" value={this.state.systemPrice}
-            name="systemPrice" onChange={this.handleChange}/>
+          <div className="basic_long">
+            <div>
+              <label>Price: </label>
+            </div>
+            <div>
+              <input type="text" value={this.state.price}
+              name="price" onChange={this.handleChange}/>
+            </div>
+            <div>
+              <label>System price: </label>
+            </div>
+            <div>
+              <input type="text" value={this.state.systemPrice}
+              name="systemPrice" onChange={this.handleChange}/>
+            </div>
           </div>
 
           <div className="basic">
