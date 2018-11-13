@@ -320,7 +320,7 @@ class App extends Component {
           <div><input type="checkbox"/> 4_ Correct NMIN BC</div>
           <div><input type="checkbox"/> 5_ Home Insurance Policy</div>
           <div><input type="checkbox"/> 6_ Latest Propose</div>
-          <div><button type="button">Upload Document</button></div>
+          <div><input type="button" value="Upload Document"/></div>
         </div>
 
         <div className="submit"><br/>

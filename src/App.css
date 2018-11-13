@@ -52,6 +52,16 @@ input[type=text] {
   display: flex;
   align-items: center;
   justify-content: center;
+
+}
+
+button {
+  background-color: orange;
+  color: white;
+  width: 200px;
+  height: 40px;
+  font-size: 20px;
+  margin-top: 15px;
 }
 
 
