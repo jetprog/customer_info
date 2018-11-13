@@ -78,38 +78,51 @@ class App extends Component {
 
         <div className="basic_info">
           <h2>Basic Info</h2>
-          <div>
-            Name: <input type="text" value={this.state.name}
+          <div className="basic">
+            <label>Name: </label>
+            <input type="text" value={this.state.name}
             name="name" onChange={this.handleChange}/>
           </div>
-          <div>
-            Address: <input type="text" value={this.state.address}
+
+          <div className="basic">
+            <label>Address: </label>
+            <input type="text" value={this.state.address}
             name="address" onChange={this.handleChange}/>
           </div>
-          <div>
-            Email: <input type="text" value={this.state.email}
+
+          <div className="basic">
+            <label>Email: </label>
+            <input type="text" value={this.state.email}
             name="email" onChange={this.handleChange}/>
           </div>
-          <div>
-            Phone: <input type="text" value={this.state.phone}
+
+          <div className="basic">
+            <label>Phone: </label>
+            <input type="text" value={this.state.phone}
             name="phone" onChange={this.handleChange}/>
           </div>
-          <div>
-            Account: <input type="text" value={this.state.account}
+
+          <div className="basic">
+            <label>Account: </label>
+            <input type="text" value={this.state.account}
             name="account" onChange={this.handleChange}/>
           </div>
         </div>
 
-        <div className="home_info">
+        <div>
           <h2>Home Info</h2>
-          <div>
-            Square Footage of Home <input type="text" value={this.state.squareFootHome}
+          <div className="basic">
+            <label>Square Footage of Home: </label>
+            <input type="text" value={this.state.squareFootHome}
             name="squareFootHome" onChange={this.handleChange}/>
           </div>
-          <div>
-            Home Value: (Cost Estimate) <input type="text" value={this.state.homeValue}
+
+          <div className="basic">
+            <label>Home Value: (Cost Estimate)</label>
+            <input type="text" value={this.state.homeValue}
             name="homeValue" onChange={this.handleChange}/>
           </div>
+
           <div>New Construction?
             <input type="checkbox" value="yes"
             name="newConstruction" onChange={this.handleChange}/> Yes
@@ -118,73 +131,97 @@ class App extends Component {
           </div>
         </div>
 
-        <div className="home_info">
+        <div>
           <h2>Energy Info</h2>
           <div>Utility Company <select></select>
           </div>
-          <div>Account #:
-            <input type="text"/> Heating: <input type="checkbox" value='Electric'
+          <div className="basic">
+            <label>Account#: </label>
+            <input type="text"/>
+            Heating: <input type="checkbox" value='Electric'
             name="heating" onChange={this.handleChange}/> Electric
             <input type="checkbox" value='Propane'
             name="heating" onChange={this.handleChange}/> Propane
           </div>
-          <div>
+
+          {/*<div>
             <br/>12 Month Consumption:
             <br/>
             <div>Jan: <input type="text"/> May: <input type="text"/> Sep: <input type="text"/></div>
             <div>Feb: <input type="text"/> Jun: <input type="text"/> Oct: <input type="text"/></div>
             <div>Mar: <input type="text"/> Jul: <input type="text"/> Nov: <input type="text"/></div>
             <div>Apr: <input type="text"/> Aug: <input type="text"/> Dec: <input type="text"/></div>
-          </div>
+          </div>*/}
         </div>
 
-        <div className="home_info">
+        <div>
           <h2>Financial Info</h2>
-          <div>Combined Income: <input type="text" value={this.state.combinedIncome}
+          <div className="basic">
+            <label>Combined Income: </label>
+            <input type="text" value={this.state.combinedIncome}
             name="combinedIncome" onChange={this.handleChange} />
           </div>
-          <div>
-            Debt: <input type="text" value={this.state.debt}
+
+          <div className="basic">
+            <label>Debt: </label>
+            <input type="text" value={this.state.debt}
             name="debt" onChange={this.handleChange}/>
-            Credit Score: <input type="text" value={this.state.crediStore}
+            Credit:<input type="text" value={this.state.crediStore}
             name="crediStore" onChange={this.handleChange}/>
           </div>
-          <div>
-            Number of Years at Address: <input type="text" value={this.state.numberYearsAdress}
+
+          <div className="basic">
+            <label>Number of Years at Address: </label>
+            <input type="text" value={this.state.numberYearsAdress}
             name="numberYearsAdress" onChange={this.handleChange}/>
           </div>
-          <div>
-            Employer: <input type="text" value={this.state.employer}
+
+          <div className="basic">
+            <label>Employer: </label>
+            <input type="text" value={this.state.employer}
             name="employer" onChange={this.handleChange}/>
           </div>
+
           <div>
-            Number of Years with Employer: <input type="text" value={this.state.numberYearEmployer}
+            <label>Number of Years with Employer: </label>
+            <input type="text" value={this.state.numberYearEmployer}
             name="numberYearEmployer" onChange={this.handleChange}/>
           </div>
+
           <div>
             <input type="checkbox" value='Legally Married'
             name="statusMatrimonial" onChange={this.handleChange}/> Legally Married
             <input type="checkbox" value='Single'
             name="statusMatrimonial" onChange={this.handleChange}/> Single
           </div>
-          <div>
-            Annual Liabillities <input type="text" value={this.state.annualLiabillities}
+
+          <div className="basic">
+            <label>Annual Liabillities </label>
+            <input type="text" value={this.state.annualLiabillities}
             name="annualLiabillities" onChange={this.handleChange}/>
           </div>
-          <div>
-            Assets: <input type="text" value={this.state.assets}
+
+          <div className="basic">
+            <label>Assets: </label>
+            <input type="text" value={this.state.assets}
             name="assets" onChange={this.handleChange}/>
           </div>
-          <div>
-            Bank: <input type="text" value={this.state.bank}
+
+          <div className="basic">
+            <label>Bank Info: </label>
+            <input type="text" value={this.state.bank}
             name="bank" onChange={this.handleChange}/>
           </div>
-          <div>
-            # of Years at Bank: <input type="text" value={this.state.numberYearBank}
+
+          <div className="basic">
+            <label># of Years at Bank: </label>
+            <input type="text" value={this.state.numberYearBank}
             name="numberYearBank" onChange={this.handleChange}/>
           </div>
-          <div>
-            Total Balances: <input type="text" value={this.state.totalBalance}
+
+          <div className="basic">
+            <label>Total Balances: </label>
+            <input type="text" value={this.state.totalBalance}
             name="totalBalance" onChange={this.handleChange}/>
           </div>
         </div>
@@ -218,36 +255,48 @@ class App extends Component {
         <div className="home_info">
           <h2>Project Info</h2>
           <div>
-            Signed Date: <input type="date"/>
+            <label>Signed Date: </label>
+            <input type="date"/>
           </div>
-          <div>
-            Price: <input type="text" value={this.state.price}
+
+          <div className="basic">
+            <label>Price: </label>
+            <input type="text" value={this.state.price}
             name="price" onChange={this.handleChange}/>
-            System Price: <input type="text" value={this.state.systemPrice}
+            System: <input type="text" value={this.state.systemPrice}
             name="systemPrice" onChange={this.handleChange}/>
           </div>
-          <div>
-            Adders: <input type="text" value={this.state.adders}
+
+          <div className="basic">
+            <label>Adders: </label>
+            <input type="text" value={this.state.adders}
             name="adders" onChange={this.handleChange}/>
           </div>
-          <div>
-            Details: <input type="text" value={this.state.details}
+
+          <div className="basic">
+            <label>Details: </label>
+            <input type="text" value={this.state.details}
             name="details" onChange={this.handleChange}/>
           </div>
         </div>
 
         <div className="home_info">
           <h2>Sales Info</h2>
-          <div>
-            Sales Person: <input type="text" value={this.state.salesPerson}
+          <div className="basic">
+            <label>Sales Person: </label>
+            <input type="text" value={this.state.salesPerson}
             name="salesPerson" onChange={this.handleChange}/>
           </div>
-          <div>
-            Seller: <input type="text" value={this.state.sellers}
+
+          <div className="basic">
+            <label>Seller: </label>
+            <input type="text" value={this.state.sellers}
             name="sellers" onChange={this.handleChange}/>
           </div>
-          <div>
-            Reffered by: <input type="text" value={this.state.reffered}
+
+          <div className="basic">
+            <label>Reffered by: </label>
+            <input type="text" value={this.state.reffered}
             name="reffered" onChange={this.handleChange}/>
           </div>
         </div>
@@ -255,8 +304,10 @@ class App extends Component {
         <div className="home_info">
           <h2>Load Info</h2>
           <div>Load Source <select></select></div>
-          <div>
-            Describe Brand Recognition: <input type="text" value={this.state.describeBrandRecognition}
+
+          <div className="basic">
+            <label>Describe Brand Recognition: </label>
+            <input type="text" value={this.state.describeBrandRecognition}
             name="describeBrandRecognition" onChange={this.handleChange}/>
           </div>
         </div>

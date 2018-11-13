@@ -1,8 +1,13 @@
 .container {
   padding: 20px;
   margin: auto;
-  width: 600px;
+  width: 500px;
 }
+
+/*.basic_info {
+  display: flex;
+}*/
+
 
 
 .App {
@@ -16,9 +21,32 @@ h2 {
 input[type=text] {
   background: transparent;
   border: none;
-  width: 100px;
   border-bottom: 1px solid #000000;
+  width: 90%;
 }
+
+.basic {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.basic_energy {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+/*label {
+ width: 10%;
+}*/
+
+.basic {
+  margin: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
 
 .submit {
   display: flex;
@@ -28,7 +56,7 @@ input[type=text] {
 
 
 textarea {
-  width: 600px;
+  width: 100%;
 }
 
 
