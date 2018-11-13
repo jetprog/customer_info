@@ -102,20 +102,26 @@ class App extends Component {
 
         <div className="home_info">
           <h2>Home Info</h2>
-          <div>Square Footage of Home <input type="text" value={this.state.squareFootHome}
-            name="squareFootHome" onChange={this.handleChange}/></div>
-          <div>Home Value: (Cost Estimate) <input type="text" value={this.state.homeValue}
-            name="homeValue" onChange={this.handleChange}/></div>
+          <div>
+            Square Footage of Home <input type="text" value={this.state.squareFootHome}
+            name="squareFootHome" onChange={this.handleChange}/>
+          </div>
+          <div>
+            Home Value: (Cost Estimate) <input type="text" value={this.state.homeValue}
+            name="homeValue" onChange={this.handleChange}/>
+          </div>
           <div>New Construction?
             <input type="checkbox" value="yes"
             name="newConstruction" onChange={this.handleChange}/> Yes
             <input type="checkbox" value="no"
-            name="newConstruction" onChange={this.handleChange}/> No</div>
+            name="newConstruction" onChange={this.handleChange}/> No
+          </div>
         </div>
 
         <div className="home_info">
           <h2>Energy Info</h2>
-          <div>Utility Company <select></select> </div>
+          <div>Utility Company <select></select>
+          </div>
           <div>Account #:
             <input type="text"/> Heating: <input type="checkbox" value='Electric'
             name="heating" onChange={this.handleChange}/> Electric
@@ -266,8 +272,8 @@ class App extends Component {
           <div><button type="button">Upload Document</button></div>
         </div>
 
-        <div><br/>
-          <button type="button" onClick={() => this.submit()}>
+        <div className="submit"><br/>
+          <button type="button" className="submitButton" onClick={() => this.submit()}>
           Done</button>
         </div>
 
