@@ -1,0 +1,54 @@
+.main {
+  width: 90%;
+  height: auto;
+}
+
+.image {
+  float: right;
+  margin-right: 30%;
+  opacity: 0.3;
+  margin-top: -480px;
+}
+
+.body-content {
+  width: 600px;
+  margin-top: 40px;
+}
+
+.footer {
+  clear: both;
+}
+
+.container {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-template-columns: 65% 33.5%;
+  padding: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: auto auto auto auto;
+  padding: 15px;
+}
+
+.line {
+  margin-left: 15px;
+}
+
+
+.divSpace {
+  font-size: 25px;
+  margin-left: 18px
+}
+
+.orange {
+  color: orange;
+}
+
+
+.grid-item {
+  font-size: 15px;
+  margin-top: 25px;
+}
