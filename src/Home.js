@@ -48,6 +48,16 @@ const Home = (props) => (
         </div>
       </div>
 
+      <div className="end">
+        <div>
+          <span className="resume">* $ Value is market pricing for the energy efficiency package</span><br/>
+          <span className="resume">  ** Content of the REDUCE package TBD at DPI Audit</span>
+        </div>
+        <div className="on-off">
+
+        </div>
+      </div>
+
     </div>
 
   </div>

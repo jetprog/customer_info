@@ -1,6 +1,7 @@
 .main {
   width: 90%;
   height: auto;
+  padding: 50px
 }
 
 .image {
@@ -53,6 +54,15 @@
 
 .orange {
   color: orange;
+}
+
+.end {
+  margin-top: 40px;
+}
+
+.resume {
+  font-size: 10px;
+  margin-left: 15px;
 }
 
 
