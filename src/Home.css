@@ -17,19 +17,27 @@
 
 .footer {
   clear: both;
+  width: 600px;
 }
 
-.container {
+/*.container {
   display: grid;
   grid-column-gap: 10px;
   grid-template-columns: 65% 33.5%;
   padding: 10px;
-}
+}*/
 
 .grid-container {
   display: grid;
-  grid-column-gap: 50px;
+  grid-column-gap: 60px;
   grid-template-columns: auto auto auto auto;
+  padding: 15px;
+}
+
+.grid-three {
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: 200px 115px auto;
   padding: 15px;
 }
 
@@ -51,4 +59,8 @@
 .grid-item {
   font-size: 15px;
   margin-top: 25px;
+}
+
+.item-three {
+  font-size: 15px;
 }

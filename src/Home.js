@@ -13,7 +13,7 @@ const Home = (props) => (
         <br/>and save <b class="orange">$130/ month</b>, lifetime savings of <b class="orange">$17,000</b>
       </div>
       <span className="line">
-        <b>__________________________________________________________________________________</b>
+        <b>_________________________________________________________________________________</b>
       </span>
       <div class="grid-container">
           <div class="grid-item"><span><b>BPI Energy Audit</b></span></div>
@@ -33,13 +33,22 @@ const Home = (props) => (
 
       </div>
       <span className="line">
-        ____________________________________________________________________________________
+        ___________________________________________________________________________________
       </span>
     </div>
     <div className="image">
       <img src={require('./DownArrow.svg')} height="500" />
     </div>
-    <div className="footer">ok</div>
+    <div className="footer">
+
+      <div className="grid-three">
+        <div class="item-three"><span class="orange">Total</span></div>
+        <div class="item-three"><span><b class="orange">SAVINGS</b> <br/>11% energy <br/>$63/month <br/>$16,490 lifetime</span></div>
+        <div class="item-three"><span><b class="orange">COST</b> <br/>$11/month <br/>$2600</span>
+        </div>
+      </div>
+
+    </div>
 
   </div>
 )
