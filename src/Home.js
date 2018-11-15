@@ -54,7 +54,10 @@ const Home = (props) => (
           <span className="resume">  ** Content of the REDUCE package TBD at DPI Audit</span>
         </div>
         <div className="on-off">
-
+          <label class="switch">
+            <input type="checkbox"/>
+            <span class="slider round"></span>
+          </label>
         </div>
       </div>
 
