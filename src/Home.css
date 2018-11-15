@@ -79,6 +79,8 @@
 .switch {
   position: relative;
   display: inline-block;
+  margin-top: 5px;
+  margin-left: 22px;
   width: 60px;
   height: 34px;
 }
