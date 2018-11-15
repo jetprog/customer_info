@@ -137,7 +137,7 @@ class App extends Component {
           </div>
           <div className="basic">
             <label>Account#: </label>
-            <input type="text"/>
+            <input type="text" className="sizeAccount"/>
             Heating: <input type="checkbox" value='Electric'
             name="heating" onChange={this.handleChange}/> Electric
             <input type="checkbox" value='Propane'
@@ -148,11 +148,11 @@ class App extends Component {
             12 Month Consumption:
             <br/>
             <div className="basic">
-              Jan: <input type="text"/> May: <input type="text"/> Sep: <input type="text"/>
+              Jan: <input className="sizeMonth" type="text"/> May: <input className="sizeMonth" type="text"/> Sep: <input type="text"/>
             </div>
-            <div className="basic">Feb: <input type="text"/> Jun: <input type="text"/> Oct: <input type="text"/></div>
-            <div className="basic">Mar: <input type="text"/> Jul: <input type="text"/> Nov: <input type="text"/></div>
-            <div className="basic">Apr: <input type="text"/> Aug: <input type="text"/> Dec: <input type="text"/></div>
+            <div className="basic">Feb: <input className="sizeMonth" type="text"/> Jun: <input className="sizeMonth" type="text"/> Oct: <input type="text"/></div>
+            <div className="basic">Mar: <input className="sizeMonth" type="text"/> Jul: <input className="sizeMonth" type="text"/> Nov: <input type="text"/></div>
+            <div className="basic">Apr: <input className="sizeMonth" type="text"/> Aug: <input className="sizeMonth" type="text"/> Dec: <input type="text"/></div>
           </div>
         </div>
 
@@ -341,7 +341,7 @@ class App extends Component {
           <div><input type="checkbox"/> 4_ Correct NMIN BC</div>
           <div><input type="checkbox"/> 5_ Home Insurance Policy</div>
           <div><input type="checkbox"/> 6_ Latest Propose</div>
-          <div><input type="button" value="Upload Document"/></div>
+          <div><input className="uploadedDocuments" type="button" value="Upload Document"/></div>
         </div>
 
         <div className="submit"><br/>
