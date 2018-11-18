@@ -15,8 +15,8 @@ h2 {
 input[type=text] {
   background: transparent;
   border: none;
-  margin-left: 5px;
-  border-bottom: 1px solid #000000;
+/*  margin-left: 5px;
+  border-bottom: 1px solid #000000;*/
   width: 95%;
 }
 

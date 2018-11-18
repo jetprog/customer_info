@@ -1,0 +1,42 @@
+.financing-container {
+  width: 1024px;
+  margin: auto;
+}
+
+.financing-header {
+  border-style: solid;
+  border-width: medium;
+  padding: 30px;
+  text-align:center;
+  height: 250px;
+  background-color: #EFEFEF;
+}
+
+.financing-body {
+  height: auto;
+  display: grid;
+  grid-column-gap: 100px;
+  grid-template-columns: auto auto;
+  padding: 10px;
+}
+
+.financing-item {
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+  padding: 20px;
+}
+
+.flex-energy {
+  display: flex;
+  /*justify-content: flex-end;*/
+}
+
+.basic-info {
+  border: none;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.basic-info-label {
+  font-weight: bold;
+}
+
