@@ -30,15 +30,16 @@ class Financing extends Component {
         <div className="financing-header">
           <div>
             <label>Financier: </label>
-            <select></select>
+            <select className="energy-select"></select>
           </div>
           <div>
             <label>Product: </label>
-            <select></select>
+            <select className="energy-select"></select>
           </div>
 
           <div>
-            <button>PRE-APPROVE</button> <button>APPROVE</button>
+            <button className="validate-button">PRE-APPROVE</button>
+            <button className="validate-button">APPROVE</button>
           </div>
 
           <div>
@@ -166,6 +167,8 @@ class Financing extends Component {
                 <input type="checkbox"/>
                 <span className="component-title">Preferred Communication Method</span>
                 <input type="checkbox"/>
+                <br/>
+                <br/>
                 <div>
                   <input type="checkbox" value='phone'
                   name="communication" onChange={this.handleChange}/> <label className="communication-checkbox">Phone</label>
@@ -205,8 +208,9 @@ class Financing extends Component {
             <div className="energy-info">
               <span className="component-title">Financial Info</span>
               <input type="checkbox"/>
-
-              <div className="form-droup">
+              <br/>
+              <br/>
+              <div className="form-group">
                 <label className="basic-info-label">Social Security Number: </label>
                 <input type="text" className="financing-input" placeholder="###-##-###"
                 name="combinedIncome" onChange={this.handleChange} />

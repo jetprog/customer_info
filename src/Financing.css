@@ -3,6 +3,22 @@
   margin: auto;
 }
 
+.validate-button {
+  padding: 10px 35px;
+  font-size: 14px;
+  width: 180px;
+  margin-right: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: #e7e7e7;
+  border: none;
+  border-radius: 6px;
+}
+
 .financing-header {
   border-style: solid;
   border-width: medium;
@@ -43,6 +59,8 @@
 .uploadedDocuments {
   padding: 10px 35px;
   font-size: 14px;
+  margin-right: 50px;
+  margin-top: 40px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
