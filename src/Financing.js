@@ -48,9 +48,13 @@ class Financing extends Component {
 
         <div className="financing-body">
 
-          <div class="financing-item">
+          <div className="financing-item">
             <div className="basic-info">
-              <h2 className="component-title">Basic Info</h2>
+              <div>
+                <input type="checkbox"/>
+                <span className="component-title">Basic Info</span>
+                <input type="checkbox"/>
+              </div>
               <div className="basic">
                 <label className="basic-info-label">Name: </label>
                 <input className="basic-info" type="text" placeholder="Larissa H." value={this.state.name}
@@ -83,8 +87,11 @@ class Financing extends Component {
             </div>
 
             <div className="energy-info">
-              <h2 className="component-title">Energy Info</h2>
-              <div><label className="basic-info-label">Utility Company:</label> <select className="energy-select"><option>Dominion Energy</option></select>
+              <span className="component-title">Energy Info</span>
+              <input type="checkbox"/>
+              <div>
+              <br/>
+              <label className="basic-info-label">Utility Company:</label> <select className="energy-select"><option>Dominion Energy</option></select>
               </div>
               <div className="basic-info" >
                 <label className="basic-info-label">Account#: </label>
@@ -110,9 +117,9 @@ class Financing extends Component {
               </div>
             </div>
 
-            <div className="project-info">
-
-              <h2 className="component-title">Project Info</h2>
+            <div className="energy-info">
+              <span className="component-title">Project Info</span>
+              <input type="checkbox"/>
               <div className="project-info-space">
                 <label className="basic-info-label">Signed Date: </label>
                 <input type="text" className="energy-input" placeholder="November 28, 2018"/>
@@ -143,8 +150,9 @@ class Financing extends Component {
                 name="adders" onChange={this.handleChange}/>
               </div>
 
-              <div className="documents_info">
-                <h2 className="component-title">Uploaded Documents</h2>
+              <div className="energy-info">
+                <span className="component-title">Uploaded Documents</span>
+                <input type="checkbox"/>
                 <div className="project-info-space"><input type="checkbox"/><label className="upload-label"> 1. State Issued Drivers Licence (Restricted)</label> </div>
                 <div className="project-info-space"><input type="checkbox"/><label className="upload-label"> 2. W2 (Restricted)</label></div>
                 <div className="project-info-space"><input type="checkbox"/><label className="upload-label"> 3. Sales Photos</label></div>
@@ -154,8 +162,10 @@ class Financing extends Component {
                 <div className="project-info-space"><input className="uploadedDocuments" type="button" value="Upload Document"/></div>
               </div>
 
-              <div className="communication-info">
-                <h2 className="component-title">Preferred Communication Method</h2>
+              <div className="energy-info">
+                <input type="checkbox"/>
+                <span className="component-title">Preferred Communication Method</span>
+                <input type="checkbox"/>
                 <div>
                   <input type="checkbox" value='phone'
                   name="communication" onChange={this.handleChange}/> <label className="communication-checkbox">Phone</label>
@@ -170,7 +180,9 @@ class Financing extends Component {
 
           <div class="financing-item">
             <div className="home-info">
-              <h2 className="component-title">Home Info</h2>
+              <input type="checkbox"/>
+              <span className="component-title">Home Info</span>
+              <input type="checkbox"/>
               <div className="project-info-space">
                 <label className="basic-info-label">Square Footage of Home: </label>
                 <input type="text" className="energy-input" placeholder="3,982" value={this.state.squareFootHome}
@@ -190,18 +202,19 @@ class Financing extends Component {
               </div>
             </div>
 
-            <div className="financing-info">
-              <h2 className="component-title">Financial Info</h2>
+            <div className="energy-info">
+              <span className="component-title">Financial Info</span>
+              <input type="checkbox"/>
 
-              <div className="project-info-space">
+              <div className="form-droup">
                 <label className="basic-info-label">Social Security Number: </label>
-                <input type="text" className="financing-input" placeholder="###-##-###" value={this.state.combinedIncome}
+                <input type="text" className="financing-input" placeholder="###-##-###"
                 name="combinedIncome" onChange={this.handleChange} />
               </div>
 
               <div className="project-info-space">
                 <label className="basic-info-label">Combined Income: </label>
-                <input type="text" className="financing-input" placeholder="$439,000" value={this.state.combinedIncome}
+                <input type="text" className="financing-input" placeholder="$439,000"
                 name="combinedIncome" onChange={this.handleChange} />
               </div>
 
