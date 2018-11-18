@@ -15,7 +15,7 @@
 .financing-body {
   height: auto;
   display: grid;
-  grid-column-gap: 100px;
+  grid-column-gap: 85px;
   grid-template-columns: auto auto;
   padding: 10px;
 }
@@ -33,7 +33,7 @@
 .basic-info {
   border: none;
   margin-top: 15px;
-  font-size: 14px;
+  /*font-size: 14px;*/
 }
 
 .uploadedDocuments {
@@ -57,11 +57,40 @@
   margin-right: 100px;
 }
 
+/*.energy-input {
+
+}*/
+
 .energy-input {
   border: none;
+  width: auto;
+}
+
+.financing-div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+/*.financing-input {
+  width: 100%;
+}*/
+
+.energy-select {
+  width: 194px;
+  height: 25px;
+}
+
+.component-title {
+  margin-top: 60px;
+  font-size: 20px;
+}
+
+.upload-label {
+  font-size: 14px;
 }
 
 .basic-info-label {
   font-weight: bold;
+  font-size: 14px;
 }
 

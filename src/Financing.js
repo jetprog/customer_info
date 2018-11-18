@@ -50,7 +50,7 @@ class Financing extends Component {
 
           <div class="financing-item">
             <div className="basic-info">
-              <h2>Basic Info</h2>
+              <h2 className="component-title">Basic Info</h2>
               <div className="basic">
                 <label className="basic-info-label">Name: </label>
                 <input className="basic-info" type="text" placeholder="Larissa H." value={this.state.name}
@@ -83,8 +83,9 @@ class Financing extends Component {
             </div>
 
             <div className="energy-info">
-              <h2>Energy Info</h2>
-              <div><label className="basic-info-label">Utility Company</label> <select></select></div>
+              <h2 className="component-title">Energy Info</h2>
+              <div><label className="basic-info-label">Utility Company:</label> <select className="energy-select"><option>Dominion Energy</option></select>
+              </div>
               <div className="basic-info" >
                 <label className="basic-info-label">Account#: </label>
                 <input type="text" className="energy-input" placeholder="78292894"/>
@@ -111,7 +112,7 @@ class Financing extends Component {
 
             <div className="project-info">
 
-              <h2>Project Info</h2>
+              <h2 className="component-title">Project Info</h2>
               <div className="project-info-space">
                 <label className="basic-info-label">Signed Date: </label>
                 <input type="text" className="energy-input" placeholder="November 28, 2018"/>
@@ -143,22 +144,22 @@ class Financing extends Component {
               </div>
 
               <div className="documents_info">
-                <h2>Uploaded Documents</h2>
-                <div className="project-info-space"><input type="checkbox"/> 1. State Issued Drivers Licence (Restricted) </div>
-                <div className="project-info-space"><input type="checkbox"/> 2. W2 (Restricted)</div>
-                <div className="project-info-space"><input type="checkbox"/> 3. Sales Photos</div>
-                <div className="project-info-space"><input type="checkbox"/> 4. Correct NMIN BC</div>
-                <div className="project-info-space"><input type="checkbox"/> 5. Home Insurance Policy</div>
-                <div className="project-info-space"><input type="checkbox"/> 6. Latest Propose</div>
+                <h2 className="component-title">Uploaded Documents</h2>
+                <div className="project-info-space"><input type="checkbox"/><label className="upload-label"> 1. State Issued Drivers Licence (Restricted)</label> </div>
+                <div className="project-info-space"><input type="checkbox"/><label className="upload-label"> 2. W2 (Restricted)</label></div>
+                <div className="project-info-space"><input type="checkbox"/><label className="upload-label"> 3. Sales Photos</label></div>
+                <div className="project-info-space"><input type="checkbox"/><label className="upload-label"> 4. Correct NMIN BC</label></div>
+                <div className="project-info-space"><input type="checkbox"/><label className="upload-label"> 5. Home Insurance Policy</label></div>
+                <div className="project-info-space"><input type="checkbox"/><label className="upload-label"> 6. Latest Propose</label></div>
                 <div className="project-info-space"><input className="uploadedDocuments" type="button" value="Upload Document"/></div>
               </div>
 
               <div className="communication-info">
-                <h2>Preferred Communication Method</h2>
+                <h2 className="component-title">Preferred Communication Method</h2>
                 <div>
                   <input type="checkbox" value='phone'
                   name="communication" onChange={this.handleChange}/> <label className="communication-checkbox">Phone</label>
-                  <input type="checkbox" value='Text'
+                  <input  type="checkbox" value='Text'
                   name="communication" onChange={this.handleChange}/> <label className="communication-checkbox">Text</label>
                   <input type="checkbox" value='Email'
                   name="emails" onChange={this.handleChange}/> Email
@@ -169,126 +170,125 @@ class Financing extends Component {
 
           <div class="financing-item">
             <div className="home-info">
-              <h2>Home Info</h2>
-              <div className="basic">
-                <label>Square Footage of Home: </label>
-                <input type="text" value={this.state.squareFootHome}
+              <h2 className="component-title">Home Info</h2>
+              <div className="project-info-space">
+                <label className="basic-info-label">Square Footage of Home: </label>
+                <input type="text" className="energy-input" placeholder="3,982" value={this.state.squareFootHome}
                 name="squareFootHome" onChange={this.handleChange}/>
               </div>
 
-              <div className="basic">
-               <label>Home Value: (Cost Estimate)</label>
-               <input type="text" value={this.state.homeValue}
+              <div className="project-info-space">
+               <label className="basic-info-label">Home Value: (Cost Estimate)</label>
+               <input type="text" className="energy-input" placeholder="$608,999" value={this.state.homeValue}
                 name="homeValue" onChange={this.handleChange}/>
               </div>
 
-              <div className="basic">
-               <label>New Construction?</label>
-               <input type="text" value={this.state.homeValue}
+              <div className="project-info-space">
+               <label className="basic-info-label">New Construction?</label>
+               <input type="text" className="energy-input" placeholder="No" value={this.state.homeValue}
                 name="homeValue" onChange={this.handleChange}/>
               </div>
             </div>
 
             <div className="financing-info">
-              <h2>Financial Info</h2>
+              <h2 className="component-title">Financial Info</h2>
 
-              <div className="basic">
-                <label>Social Security Number: </label>
-                <input type="text" value={this.state.combinedIncome}
+              <div className="project-info-space">
+                <label className="basic-info-label">Social Security Number: </label>
+                <input type="text" className="financing-input" placeholder="###-##-###" value={this.state.combinedIncome}
                 name="combinedIncome" onChange={this.handleChange} />
               </div>
 
-              <div className="basic">
-                <label>Combined Income: </label>
-                <input type="text" value={this.state.combinedIncome}
+              <div className="project-info-space">
+                <label className="basic-info-label">Combined Income: </label>
+                <input type="text" className="financing-input" placeholder="$439,000" value={this.state.combinedIncome}
                 name="combinedIncome" onChange={this.handleChange} />
               </div>
 
-              <div className="basic_long">
+              <div className="project-info-space">
                 <div>
-                  <label>Debt: </label>
-                  <input type="text" value={this.state.debt}
+                  <label className="basic-info-label">Debt: </label>
+                  <input className="financing-input" placeholder="$157,000" type="text" value={this.state.debt}
                   name="debt" onChange={this.handleChange}/>
                 </div>
-                <div>
-                  <label>Credit Score: </label>
-                  <input type="text" styles={"width: 300px;"} value={this.state.crediStore}
+                <div className="project-info-space">
+                  <label className="basic-info-label">Credit Score: </label>
+                  <input type="text" className="financing-input" placeholder="743" styles={"width: 300px;"} value={this.state.crediStore}
                   name="crediStore" onChange={this.handleChange}/>
                 </div>
               </div>
 
-              <div className="basic">
-                <label>Number of Years at Address: </label>
-                <input type="text" value={this.state.numberYearsAdress}
+              <div className="project-info-space">
+                <label className="basic-info-label">Number of Years at Address: </label>
+                <input type="text" className="financing-input" placeholder="14" value={this.state.numberYearsAdress}
                 name="numberYearsAdress" onChange={this.handleChange}/>
               </div>
 
-              <div className="basic">
-                <label>Employer: </label>
-                <input type="text" value={this.state.employer}
+              <div className="project-info-space">
+                <label className="basic-info-label">Employer: </label>
+                <input type="text" className="financing-input" placeholder="CFA Institute" value={this.state.employer}
                 name="employer" onChange={this.handleChange}/>
               </div>
 
-              <div className="basic">
-                <label>Number of Years with Employer: </label>
-                <input type="text" value={this.state.numberYearEmployer}
+              <div className="project-info-space">
+                <label className="basic-info-label">Number of Years with Employer: </label>
+                <input type="text" className="financing-input" placeholder="12`" value={this.state.numberYearEmployer}
                 name="numberYearEmployer" onChange={this.handleChange}/>
               </div>
 
-              <div>
-                <label>Legally Married: </label>
-                <input type="text"
-                name="statusMatrimonial" onChange={this.handleChange}/>
+              <div className="project-info-space">
+                <label className="basic-info-label">Legally Married: </label>
+                <input type="text" className="financing-input" placeholder="Yes" name="statusMatrimonial" onChange={this.handleChange}/>
               </div>
 
-              <div className="basic">
-                <label>Annual Liabillities </label>
-                <input type="text" value={this.state.annualLiabillities}
+              <div className="project-info-space">
+                <label className="basic-info-label">Annual Liabillities </label>
+                <input type="text" className="financing-input" placeholder="34,000" value={this.state.annualLiabillities}
                 name="annualLiabillities" onChange={this.handleChange}/>
               </div>
 
-              <div className="basic">
-                <label>Assets: </label>
-                <input type="text" value={this.state.assets}
+              <div className="project-info-space">
+                <label className="basic-info-label">Assets: </label>
+                <input type="text" className="financing-input" placeholder="n/a" value={this.state.assets}
                 name="assets" onChange={this.handleChange}/>
               </div>
 
-              <div className="basic">
-                <label>Bank: </label>
-                <input type="text" value={this.state.bank}
+              <div className="project-info-space">
+                <label className="basic-info-label">Bank: </label>
+                <input type="text" className="financing-input" placeholder="Bank of America" value={this.state.bank}
                 name="bank" onChange={this.handleChange}/>
               </div>
 
-              <div className="basic">
-                <label># of Years at Bank: </label>
-                <input type="text" value={this.state.numberYearBank}
+              <div className="project-info-space">
+                <label className="basic-info-label"># of Years at Bank: </label>
+                <input type="text" className="financing-input" placeholder="22" value={this.state.numberYearBank}
                 name="numberYearBank" onChange={this.handleChange}/>
               </div>
 
-              <div className="basic">
-                <label>Total Balances: </label>
-                <input type="text" value={this.state.totalBalance}
+              <div className="project-info-space">
+                <label className="basic-info-label">Total Balances: </label>
+                <input type="text" className="financing-input" placeholder="$48,000" value={this.state.totalBalance}
                 name="totalBalance" onChange={this.handleChange}/>
               </div>
             </div>
 
             <div className="financing-notes">
-              <h2>Financing Notes</h2>
-              <textarea rows="10" cols="50"
+              <h2 className="component-title">Financing Notes</h2>
+              <textarea rows="5" cols="50"
                 name="salesNotes" onChange={this.handleChange}>
               </textarea>
             </div>
 
             <div className="sales-notes">
-              <h2>Account Management Notes Notes</h2>
-              <textarea rows="10" cols="50"
+              <h2 className="component-title">Account Management Notes Notes</h2>
+              <textarea rows="5" cols="50"
                 name="salesNotes" onChange={this.handleChange}>
               </textarea>
             </div>
 
             <div className="financing-notes">
-              <h2>Sales Notes</h2>
-              <textarea rows="10" cols="50"
+              <h2 className="component-title">Sales Notes</h2>
+              <textarea rows="5" cols="50"
                 name="salesNotes" onChange={this.handleChange}>
               </textarea>
             </div>
