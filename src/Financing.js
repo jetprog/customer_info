@@ -57,25 +57,25 @@ class Financing extends Component {
                 name="name" onChange={this.handleChange}/>
               </div>
 
-              <div className="basic">
+              <div>
                 <label className="basic-info-label">Address: </label>
                 <input className="basic-info" type="text" placeholder="1878 Catlin Road" value={this.state.address}
                 name="address" onChange={this.handleChange}/>
               </div>
 
-              <div className="basic">
+              <div>
                 <label className="basic-info-label">Email: </label>
                 <input className="basic-info" placeholder="larissa@gmail.com" type="text" value={this.state.email}
                 name="email" onChange={this.handleChange}/>
               </div>
 
-              <div className="basic">
+              <div>
                 <label className="basic-info-label">Phone: </label>
                 <input className="basic-info" placeholder="978-857-1508" type="text" value={this.state.phone}
                 name="phone" onChange={this.handleChange}/>
               </div>
 
-              <div className="basic">
+              <div>
                 <label className="basic-info-label">Account#: </label>
                 <input className="basic-info" placeholder="11378" type="text" value={this.state.account}
                 name="account" onChange={this.handleChange}/>
@@ -85,76 +85,81 @@ class Financing extends Component {
             <div className="energy-info">
               <h2>Energy Info</h2>
               <div><label className="basic-info-label">Utility Company</label> <select></select></div>
-              <div className="energy-flex">
+              <div className="basic-info" >
                 <label className="basic-info-label">Account#: </label>
-                <input  className="basic-info" />
-                <label>Heating:</label>
-                <input className="basic-info" type="text"/>
+                <input type="text" className="energy-input" placeholder="78292894"/>
+                <label className="basic-info-label">Heating:</label> <input className="energy-input" placeholder="Electric" type="text"/>
               </div>
 
-              <div>
-                <label>12 Month Consumption:</label>
+              <div  className="basic-info">
+                <label className="basic-info-label">12 Month Consumption:</label>
                 <br/>
-                <div className="basic">
-                  Jan: <input className="sizeMonth" type="text"/> May: <input className="sizeMonth" type="text"/> Sep: <input type="text"/>
+                <div className="energy-flex">
+                  <label className="basic-info-label">Jan:</label> <input className="energy-input" placeholder="8474" type="text"/> <label className="basic-info-label">May:</label> <input className="energy-input" placeholder="4332" type="text"/><label className="basic-info-label">Sep:</label> <input className="energy-input" placeholder="4332" type="text"/>
                 </div>
-                <div className="basic">Feb: <input className="sizeMonth" type="text"/> Jun: <input className="sizeMonth" type="text"/> Oct: <input type="text"/></div>
-                <div className="basic">Mar: <input className="sizeMonth" type="text"/> Jul: <input className="sizeMonth" type="text"/> Nov: <input type="text"/></div>
-                <div className="basic">Apr: <input className="sizeMonth" type="text"/> Aug: <input className="sizeMonth" type="text"/> Dec: <input type="text"/></div>
+                <div className="energy-flex">
+                  <label className="basic-info-label">Feb:</label> <input className="energy-input" placeholder="8474" type="text"/> <label className="basic-info-label">Jun:</label> <input className="energy-input" placeholder="942" type="text"/> <label className="basic-info-label">Oct:</label> <input className="energy-input" placeholder="2984" type="text"/>
+                </div>
+                <div className="energy-flex">
+                  <label className="basic-info-label">Mar:</label> <input className="energy-input" placeholder="3425" type="text"/> <label className="basic-info-label">Jul:</label> <input className="energy-input" placeholder="3321" type="text"/><label className="basic-info-label">Nov:</label> <input className="energy-input" placeholder="982" type="text"/>
+                </div>
+                <div className="energy-flex">
+                  <label className="basic-info-label">Apr:</label> <input className="energy-input" placeholder="232" type="text"/> <label className="basic-info-label">Aug:</label> <input className="energy-input" placeholder="445" type="text"/><label className="basic-info-label">Dec:</label> <input className="energy-input" placeholder="2873" type="text"/>
+                </div>
               </div>
             </div>
 
             <div className="project-info">
 
               <h2>Project Info</h2>
-                <div>
-                  <label>Signed Date: </label>
-                  <input type="date"/>
-                </div>
+              <div className="project-info-space">
+                <label className="basic-info-label">Signed Date: </label>
+                <input type="text" className="energy-input" placeholder="November 28, 2018"/>
+              </div>
 
-              <div className="basic_long">
+              <div className="project-info-space">
                 <div>
-                  <label>Price: </label>
-                  <input type="text" value={this.state.price}
+                  <label className="basic-info-label">Price: </label>
+                  <input type="text" className="energy-input" placeholder="$89,937" value={this.state.price}
                   name="price" onChange={this.handleChange}/>
                 </div>
-                <div>
-                  <label>System price: </label>
-                  <input type="text" value={this.state.systemPrice}
+                <div className="project-info-space">
+                  <label className="basic-info-label">System Size: </label>
+                  <input type="text" className="energy-input" placeholder="24.7 KW" value={this.state.systemPrice}
                   name="systemPrice" onChange={this.handleChange}/>
                 </div>
               </div>
 
-              <div className="basic">
-                <label>Details: </label>
-                <input type="text" value={this.state.details}
+              <div className="project-info-space">
+                <label className="basic-info-label">Details: </label>
+                <input type="text" className="energy-input" placeholder="n/a" value={this.state.details}
                 name="details" onChange={this.handleChange}/>
               </div>
 
-              <div className="basic">
-                <label>Adders: </label>
-                <input type="text" value={this.state.adders}
+              <div className="project-info-space">
+                <label className="basic-info-label">Adders: </label>
+                <input type="text" className="energy-input" placeholder="Multiple" value={this.state.adders}
                 name="adders" onChange={this.handleChange}/>
               </div>
 
               <div className="documents_info">
                 <h2>Uploaded Documents</h2>
-                <div><input type="checkbox"/> 1. State Issued Drivers Licence (Restricted) </div>
-                <div><input type="checkbox"/> 2. W2 (Restricted)</div>
-                <div><input type="checkbox"/> 3. Sales Photos</div>
-                <div><input type="checkbox"/> 4. Correct NMIN BC</div>
-                <div><input type="checkbox"/> 5. Home Insurance Policy</div>
-                <div><input type="checkbox"/> 6. Latest Propose</div>
-                <div><input className="uploadedDocuments" type="button" value="Upload Document"/></div>
+                <div className="project-info-space"><input type="checkbox"/> 1. State Issued Drivers Licence (Restricted) </div>
+                <div className="project-info-space"><input type="checkbox"/> 2. W2 (Restricted)</div>
+                <div className="project-info-space"><input type="checkbox"/> 3. Sales Photos</div>
+                <div className="project-info-space"><input type="checkbox"/> 4. Correct NMIN BC</div>
+                <div className="project-info-space"><input type="checkbox"/> 5. Home Insurance Policy</div>
+                <div className="project-info-space"><input type="checkbox"/> 6. Latest Propose</div>
+                <div className="project-info-space"><input className="uploadedDocuments" type="button" value="Upload Document"/></div>
               </div>
 
               <div className="communication-info">
                 <h2>Preferred Communication Method</h2>
                 <div>
                   <input type="checkbox" value='phone'
-                  name="communication" onChange={this.handleChange}/> Phone
+                  name="communication" onChange={this.handleChange}/> <label className="communication-checkbox">Phone</label>
                   <input type="checkbox" value='Text'
-                  name="communication" onChange={this.handleChange}/> Text
+                  name="communication" onChange={this.handleChange}/> <label className="communication-checkbox">Text</label>
                   <input type="checkbox" value='Email'
                   name="emails" onChange={this.handleChange}/> Email
                 </div>
