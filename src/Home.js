@@ -13,7 +13,7 @@ const Home = (props) => (
         <br/>and save <b class="build-reduce-orange">$130/ month</b>, lifetime savings of <b class="build-reduce-orange">$17,000</b>
       </div>
       <span className="build-reduce-line">
-        <b>_________________________________________________________________________________</b>
+        <h1 className="build-reduce-bold-line">___________________________________________</h1>
       </span>
       <div class="build-reduce-grid-container">
           <div class="build-reduce-grid-item"><span><b>BPI Energy Audit</b></span></div>
@@ -33,7 +33,7 @@ const Home = (props) => (
 
       </div>
       <span className="line">
-        ___________________________________________________________________________________
+        _______________________________________________________________________________________
       </span>
     </div>
     <div className="build-reduce-image">

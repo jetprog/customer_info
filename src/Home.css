@@ -17,6 +17,10 @@
   margin-top: -10px;
 }
 
+/*.build-reduce-bold-line {
+  font-weight: bolder;
+}*/
+
 .build-reduce-body-content {
   width: 600px;
   margin-top: 40px;
@@ -30,15 +34,17 @@
 .build-reduce-grid-container {
   display: grid;
   grid-column-gap: 60px;
+  margin-top: -30px;
   grid-template-columns: auto auto auto auto;
-  padding: 15px;
+  /*padding: 15px;*/
 }
 
 .build-reduce-grid-three {
   display: grid;
   grid-column-gap: 50px;
+  margin-top: 15px;
   grid-template-columns: 200px 115px auto;
-  padding: 15px;
+  /*padding: 15px;*/
 }
 
 .build-reduce-line {
@@ -48,7 +54,8 @@
 
 .build-reduce-divSpace {
   font-size: 25px;
-  margin-left: 18px
+  margin-bottom: -40px;
+  /*margin-left: 5px*/
 }
 
 .build-reduce-orange {
@@ -61,7 +68,7 @@
 
 .build-reduce-resume {
   font-size: 10px;
-  margin-left: 15px;
+  /*margin-left: 15px;*/
 }
 
 
