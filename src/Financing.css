@@ -3,7 +3,7 @@
   margin: auto;
 }
 
-.validate-button {
+.financing-validate-button {
   padding: 10px 35px;
   font-size: 14px;
   width: 180px;
@@ -41,22 +41,22 @@
   padding: 20px;
 }
 
-.energy-flex {
+.financing-energy-flex {
   display: flex;
   margin-top: 8px;
 }
 
-.energy-info {
+.financing-energy-info {
   margin-top: 60px;
 }
 
-.basic-info {
+.financing-basic-info {
   border: none;
   margin-top: 15px;
   /*font-size: 14px;*/
 }
 
-.uploadedDocuments {
+.financing-uploadedDocuments {
   padding: 10px 35px;
   font-size: 14px;
   margin-right: 50px;
@@ -71,11 +71,11 @@
   border-radius: 6px;
 }
 
-.project-info-space {
+.financing-project-info-space {
   margin-top: 15px;
 }
 
-.communication-checkbox {
+.financing-communication-checkbox {
   margin-right: 100px;
 }
 
@@ -83,7 +83,7 @@
 
 }*/
 
-.energy-input {
+.financing-energy-input {
   border: none;
   width: auto;
 }
@@ -97,22 +97,22 @@
   width: 100%;
 }*/
 
-.energy-select {
+.financing-energy-select {
   width: 194px;
   height: 25px;
 }
 
-.component-title {
+.financing-component-title {
   margin-top: 60px;
   font-size: 20px;
   font-weight: bold;
 }
 
-.upload-label {
+.financing-upload-label {
   font-size: 14px;
 }
 
-.basic-info-label {
+.financing-basic-info-label {
   font-weight: bold;
   font-size: 14px;
 }
