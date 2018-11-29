@@ -1,76 +1,76 @@
-.main {
+.build-reduce-main {
   width: 90%;
   height: auto;
   padding: 50px
 }
 
-.image {
+.build-reduce-image {
   float: right;
   margin-right: 30%;
   opacity: 0.3;
   margin-top: -480px;
 }
 
-.on-off {
+.build-reduce-on-off {
   float: right;
   margin-right: 240px;
   margin-top: -10px;
 }
 
-.body-content {
+.build-reduce-body-content {
   width: 600px;
   margin-top: 40px;
 }
 
-.footer {
+.build-reduce-footer {
   clear: both;
   width: 90%;
 }
 
-.grid-container {
+.build-reduce-grid-container {
   display: grid;
   grid-column-gap: 60px;
   grid-template-columns: auto auto auto auto;
   padding: 15px;
 }
 
-.grid-three {
+.build-reduce-grid-three {
   display: grid;
   grid-column-gap: 50px;
   grid-template-columns: 200px 115px auto;
   padding: 15px;
 }
 
-.line {
+.build-reduce-line {
   margin-left: 15px;
 }
 
 
-.divSpace {
+.build-reduce-divSpace {
   font-size: 25px;
   margin-left: 18px
 }
 
-.orange {
+.build-reduce-orange {
   color: orange;
 }
 
-.end {
+.build-reduce-end {
   margin-top: 40px;
 }
 
-.resume {
+.build-reduce-resume {
   font-size: 10px;
   margin-left: 15px;
 }
 
 
-.grid-item {
+.build-reduce-grid-item {
   font-size: 15px;
   margin-top: 25px;
 }
 
-.item-three {
+.build-reduce-item-three {
   font-size: 15px;
 }
 
