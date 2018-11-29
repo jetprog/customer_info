@@ -37,7 +37,7 @@ const Home = (props) => (
       </span>
     </div>
     <div className="build-reduce-image">
-      <img src={require('./DownArrow.svg')} height="500" />
+      <img src={require('./DownArrow.svg')} height="480" />
     </div>
     <div className="build-reduce-footer">
 
