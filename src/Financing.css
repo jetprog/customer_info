@@ -28,10 +28,21 @@
   background-color: #EFEFEF;
 }
 
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: 20px 400px 15px;
+  height: auto;
+}
+.grid-item {
+  /*padding: 20px;
+  font-size: 30px;
+  text-align: center;*/
+}
+
 .financing-body {
   height: auto;
   display: grid;
-  grid-column-gap: 85px;
+  grid-column-gap: 70px;
   grid-template-columns: auto auto;
   padding: 10px;
 }
@@ -47,7 +58,11 @@
 }
 
 .financing-energy-info {
-  margin-top: 60px;
+  margin-top: 30px;
+}
+
+.financing-financial-info {
+  margin-top: 108px;
 }
 
 .financing-basic-info {
