@@ -28,22 +28,37 @@ class Financing extends Component {
       <div className="financing-container">
 
         <div className="financing-header">
-          <div>
-            <label>Financier: </label>
-            <select className="financing-energy-select"></select>
+
+          <div className="grid-container-header">
+            <div className="grid-item"><label>Financier: </label></div>
+            <div className="grid-item">
+              <select className="financing-energy-select">
+                <option>ECG</option>
+              </select>
+            </div>
           </div>
-          <div>
-            <label>Product: </label>
-            <select className="financing-energy-select"></select>
+          <br/>
+          <div className="grid-container-header">
+            <div className="grid-item"><label>Product:</label></div>
+            <div className="grid-item">
+              <select className="financing-energy-select">
+                <option>ECG - Product 1</option>
+              </select>
+            </div>
           </div>
 
           <div>
-            <button className="financing-validate-button">PRE-APPROVE</button>
-            <button className="financing-validate-button">APPROVE</button>
+            <button className="financing-validate-button-pre-approve">PRE-APPROVE</button>
+            <button className="financing-validate-button-approve">APPROVE</button>
           </div>
 
-          <div>
-            <input type="checkbox"/> Ready <input type="checkbox"/> Missing info below
+          <div className="grid-container-checkbox">
+            <div className="grid-item">
+              <input type="checkbox"/><label className="financing-header-label-ready">Ready to go</label>
+            </div>
+            <div className="grid-item-missing">
+              <input type="checkbox"/><label className="financing-header-label-missing">Missing info below</label>
+            </div>
           </div>
         </div>
 

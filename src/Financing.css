@@ -3,7 +3,7 @@
   margin: auto;
 }
 
-.financing-validate-button {
+.financing-validate-button-pre-approve {
   padding: 10px 35px;
   font-size: 14px;
   width: 180px;
@@ -14,8 +14,24 @@
   text-decoration: none;
   outline: none;
   color: black;
-  background-color: #e7e7e7;
-  border: none;
+  background-color: rgba(255, 76, 0, 0.1);
+  border: 3px solid rgba(255, 76, 0, 0.87);
+  border-radius: 6px;
+}
+
+.financing-validate-button-approve {
+  padding: 10px 35px;
+  font-size: 14px;
+  width: 180px;
+  margin-right: 50px;
+  margin-top: 40px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: rgba(0, 167, 77, 0.1);
+  border: 3px solid #00a74d;
   border-radius: 6px;
 }
 
@@ -33,10 +49,29 @@
   grid-template-columns: 20px 410px 15px;
   height: auto;
 }
-.grid-item {
-  /*padding: 20px;
-  font-size: 30px;
-  text-align: center;*/
+
+.grid-container-header {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  margin-bottom: 15px;
+}
+
+.financing-header-label-ready {
+  color: rgba(255, 76, 0, 0.87);
+}
+
+.financing-header-label-missing {
+  color: #00a74d;
+}
+
+.grid-container-checkbox {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  margin-top: 25px;
+}
+
+.grid-item-missing {
+  margin-left: 100px;
 }
 
 .financing-body {
