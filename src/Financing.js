@@ -53,7 +53,7 @@ class Financing extends Component {
 
               <div class="grid-container">
                 <div class="grid-item"><input type="checkbox"/></div>
-                <div class="grid-item">
+                <div class="financing-grid-item-border-both">
 
                   <h2>Basic Info</h2>
                   <div className="financing-basic">
@@ -96,7 +96,7 @@ class Financing extends Component {
 
               <div class="grid-container">
                 <div class="grid-item"></div>
-                <div class="grid-item">
+                <div class="financing-grid-item-border-one">
 
                   <h2>Energy Info</h2>
                   <div>
@@ -134,7 +134,7 @@ class Financing extends Component {
 
               <div class="grid-container">
                 <div class="grid-item"><input type="checkbox"/></div>
-                <div class="grid-item">
+                <div class="financing-grid-item-border-both">
 
                   <h2>Project Info</h2>
                   <div className="financing-project-info-space">
@@ -176,7 +176,7 @@ class Financing extends Component {
 
                 <div class="grid-container">
                   <div class="grid-item"></div>
-                  <div class="grid-item">
+                  <div class="financing-grid-item-border-one">
 
                     <h2>Uploaded Documents</h2>
                     <div className="financing-project-info-space"><input type="checkbox"/><label className="financing-upload-label"> 1. State Issued Drivers Licence (Restricted)</label> </div>
@@ -196,7 +196,7 @@ class Financing extends Component {
 
                 <div class="grid-container">
                   <div class="grid-item"><input type="checkbox"/></div>
-                  <div class="grid-item">
+                  <div class="financing-grid-item-border-both">
 
                     <h2>Preferred Communication Method</h2>
                     <div>
@@ -220,7 +220,7 @@ class Financing extends Component {
 
               <div class="grid-container">
                   <div class="grid-item"></div>
-                  <div class="grid-item">
+                  <div class="financing-grid-item-border-one">
                     <h2>Home Info</h2>
                     <div className="financing-project-info-space">
                       <label className="financing-basic-info-label">Square Footage of Home: </label>
@@ -248,7 +248,7 @@ class Financing extends Component {
 
               <div class="grid-container">
                 <div class="grid-item"><input type="checkbox"/></div>
-                <div class="financing-grid-item-financial">
+                <div class="financing-grid-item-border-both">
                   <h2>Financial Info</h2>
                   <div className="form-group">
                     <label className="financing-basic-info-label">Social Security Number: </label>

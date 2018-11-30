@@ -30,7 +30,7 @@
 
 .grid-container {
   display: inline-grid;
-  grid-template-columns: 20px 400px 15px;
+  grid-template-columns: 20px 410px 15px;
   height: auto;
 }
 .grid-item {
@@ -42,7 +42,7 @@
 .financing-body {
   height: auto;
   display: grid;
-  grid-column-gap: 70px;
+  grid-column-gap: 60px;
   grid-template-columns: auto auto;
   padding: 10px;
 }
@@ -50,6 +50,16 @@
 .financing-item {
   /*border: 1px solid rgba(0, 0, 0, 0.8);*/
   padding: 20px;
+}
+
+.financing-grid-item-border-both {
+  padding-left: 10px;
+  border-left: 4px solid #ff3232;
+  border-right: 4px solid #009900;
+}
+
+.financing-grid-item-border-one {
+  border-right: 4px solid #009900;
 }
 
 .financing-energy-flex {
