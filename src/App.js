@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 // import './App.css';
 // import Home from './Home'
-import Financing from './Financing'
+import Financing from './Financing';
+import Contract from './Contract';
 
 class App extends Component {
   constructor (props) {
@@ -71,7 +72,7 @@ class App extends Component {
 
   render() {
     return (
-      <Financing/>
+      <Contract/>
     );
   }
 }

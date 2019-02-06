@@ -1,0 +1,93 @@
+.generate-contract-container {
+  width: 1024px;
+  display: grid;
+  grid-column-gap: 30px;
+  grid-template-columns: 463px 561px;
+  margin: auto;
+  padding: 10px;
+}
+
+.generate-contract-leftDiv {
+  width: 463px;
+  height: 1000px;
+  padding-left: 20px;
+  overflow-y: scroll;
+  background-color: #d8d8d8;
+}
+
+
+.generate-contract-rightDiv {
+  width: 561px;
+  height: 1024px;
+  overflow-y: scroll;
+}
+
+.generate-contract-grid-container {
+  display: grid;
+  grid-template-columns: 20px auto;
+  grid-gap: 20px;
+}
+
+.generate-contract-grid-policy-date {
+  display: grid;
+  grid-template-columns: 130px 5px;
+}
+
+
+.generate-contract-item2 {
+  margin-top: -15px;
+}
+
+.generate-contract-wrapper-button {
+  display: flex;
+  justify-content: center;
+}
+
+button.generate-contract-button {
+  width: 243px;
+  height: 50px;
+  margin-top: 100px;
+  border-radius: 2px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: rgba(25, 54, 88, 0.1);
+  cursor: pointer;
+  font-family: AvenirNext;
+  font-size: 14px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  text-align: center;
+  color: #193658;
+}
+
+button.generate-contract-upload-insurance {
+  width: 212px;
+  height: 36px;
+  margin-top: 40px;
+  margin-bottom: 90px;
+  border-radius: 6px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), inset 0 2px 0 0 #ffffff;
+  background-image: linear-gradient(to bottom, #f2f2f2, #d4d4d4);
+  font-family: Avenir;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #404040;
+}
+
+input.generate-contract-appointment {
+  width: 387px;
+  height: 25px;
+}
+
+input.generate-contract-checkbox{
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+}
