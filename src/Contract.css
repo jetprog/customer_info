@@ -28,6 +28,22 @@
   grid-gap: 20px;
 }
 
+.generate-contract-content {
+  margin-top: 60px;
+}
+
+.generate-contract-div-info {
+  margin-bottom: 8px;
+}
+
+.generate-contract-content-right {
+  margin-top: 45px;
+}
+
+.generate-contract-info-space {
+  margin-top: 15px;
+}
+
 .generate-contract-grid-policy-date {
   display: grid;
   grid-template-columns: 130px 5px;
@@ -36,6 +52,20 @@
 
 .generate-contract-item2 {
   margin-top: -15px;
+}
+
+.generate-contract-labelAnswer, .generate-contract-upload-label {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+label.generate-contract-label-question {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.generate-contract-communication-checkbox {
+  margin-right: 100px;
 }
 
 .generate-contract-wrapper-button {
