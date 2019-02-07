@@ -6,13 +6,22 @@ class Contract extends Component {
     super(props);
 
     this.state = {
-
+      insurance: '',
+      policyNumber: '',
+      policyAmount: '',
+      policyDate: [],
+      address: '',
+      name: '',
+      appointment: '',
+      referred: '',
+      conditional: ''
     }
 
     this.handleChange = this.handleChange.bind(this);
 
   }
 
+  //will need update for handle date and passing it to the policyDate array
   handleChange (e) {
     this.setState({ [e.target.name]: e.target.value})
   }
@@ -274,11 +283,11 @@ class Contract extends Component {
 
                 <div className="generate-contract-div-info-right">
                   <label className="generate-contract-label-question">Policy Dates: </label>
-                  <input type="text" className="generate-contract-date-input" value={this.state.insurance}
-                  name="insurance" onChange={this.handleChange}/>
+                  <input type="text" className="generate-contract-date-input" value={this.state.policyDate}
+                  name="policyDate" onChange={this.handleChange}/>
                   <label className="generate-contract-label-question-date">to</label>
-                  <input type="text" className="generate-contract-date-input" value={this.state.insurance}
-                  name="insurance" onChange={this.handleChange}/>
+                  <input type="text" className="generate-contract-date-input" value={this.state.policyDate}
+                  name="policyDate" onChange={this.handleChange}/>
                 </div>
 
                 <div className="generate-contract-div-info-right">
@@ -309,8 +318,8 @@ class Contract extends Component {
               <div className="item2">
                 <h2>Appointment Setter</h2>
                 <div>
-                  <input className="generate-contract-appointment" type="text" value={this.state.setter}
-                    name="setter" onChange={this.handleChange}/>
+                  <input className="generate-contract-appointment" type="text" value={this.state.appointment}
+                    name="appointment" onChange={this.handleChange}/>
                 </div>
               </div>
             </div>
@@ -322,8 +331,8 @@ class Contract extends Component {
               <div className="item2">
                 <h2>Referred By</h2>
                 <div>
-                  <input className="generate-contract-appointment" type="text" value={this.state.reffered}
-                    name="reffered" onChange={this.handleChange}/>
+                  <input className="generate-contract-appointment" type="text" value={this.state.refered}
+                    name="refered" onChange={this.handleChange}/>
                 </div>
               </div>
             </div>
