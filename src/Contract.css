@@ -10,7 +10,7 @@
 .generate-contract-leftDiv {
   width: 463px;
   height: 1000px;
-  padding-left: 20px;
+  padding-left: 60px;
   overflow-y: scroll;
   background-color: #d8d8d8;
 }
@@ -20,6 +20,7 @@
   width: 561px;
   height: 1024px;
   overflow-y: scroll;
+  padding-left: 90px;
 }
 
 .generate-contract-grid-container {
@@ -65,12 +66,15 @@ label.generate-contract-label-question {
 }
 
 .generate-contract-communication-checkbox {
-  margin-right: 100px;
+  margin-right: 60px;
 }
 
 .generate-contract-wrapper-button {
-  display: flex;
-  justify-content: center;
+  margin-left: 100px;
+}
+
+.generate-contract-wrapper-button-final {
+  margin-left: 120px;
 }
 
 button.generate-contract-button {

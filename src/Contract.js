@@ -148,7 +148,7 @@ class Contract extends Component {
           </div>
 
           <div className="generate-contract-content">
-            <h2>Preferred Communication Method</h2>
+            <h2>Preferred Communication</h2>
             <div>
               <input type="checkbox" value='phone'
               name="communication" onChange={this.handleChange}/> <label className="generate-contract-communication-checkbox">Phone</label>
@@ -364,7 +364,7 @@ class Contract extends Component {
             </div>
           </div>
 
-          <div className="generate-contract-wrapper-button">
+          <div className="generate-contract-wrapper-button-final">
             <button className="generate-contract-button">GENERATE FINAL CONTRACT</button>
           </div>
 
