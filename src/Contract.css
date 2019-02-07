@@ -43,6 +43,10 @@
   margin-bottom: 8px;
 }
 
+.generate-contract-div-info-right {
+  margin-bottom: 15px;
+}
+
 .generate-contract-content-right {
   margin-top: 45px;
 }
@@ -71,6 +75,61 @@ label.generate-contract-label-question {
   font-size: 14px;
 }
 
+label.generate-contract-label-question-date {
+  font-weight: bold;
+  font-size: 14px;
+  margin-left: 17px;
+  margin-right: 17px;
+}
+
+input.generate-contract-insurance-input {
+  width: 243px;
+  height: 25px;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+
+input.generate-contract-policy-input {
+  width: 324px;
+  height: 25px;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+
+input.generate-contract-amount-input {
+  width: 209px;
+  height: 25px;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+
+input.generate-contract-date-input {
+  width: 120px;
+  height: 25px;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+
+input.generate-contract-address-input {
+  width: 321px;
+  height: 25px;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+
+input.generate-contract-name-input {
+  width: 338px;
+  height: 25px;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px 0 rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
+}
+
 .generate-contract-communication-checkbox {
   margin-right: 60px;
 }
@@ -88,6 +147,9 @@ button.generate-contract-button {
   height: 50px;
   margin-top: 100px;
   border-radius: 2px;
+  border-color: #193658;
+  border-style: solid;
+  border-width: medium;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   background-color: rgba(25, 54, 88, 0.1);
   cursor: pointer;

@@ -254,42 +254,42 @@ class Contract extends Component {
               <div className="item1"><input className="generate-contract-checkbox" type="checkbox"/></div>
               <div className="item2">
                 <h2>Home Owners Insurance</h2>
-                <div className="generate-contract-div-info">
+                <div className="generate-contract-div-info-right">
                   <label className="generate-contract-label-question">Insurance Company: </label>
-                  <input type="text" className=""value={this.state.insurance}
+                  <input type="text" className="generate-contract-insurance-input" value={this.state.insurance}
                   name="insurance" onChange={this.handleChange}/>
                 </div>
 
-                <div className="generate-contract-div-info">
+                <div className="generate-contract-div-info-right">
                   <label className="generate-contract-label-question">Policy #: </label>
-                  <input type="text" className=""value={this.state.policyNumber}
+                  <input type="text" className="generate-contract-policy-input" value={this.state.policyNumber}
                   name="policyNumber" onChange={this.handleChange}/>
                 </div>
 
-                <div className="generate-contract-div-info">
+                <div className="generate-contract-div-info-right">
                   <label className="generate-contract-label-question">Policy Amount Coverage: </label>
-                  <input type="text" className=""value={this.state.policyAmount}
+                  <input type="text" className="generate-contract-amount-input" value={this.state.policyAmount}
                   name="policyAmount" onChange={this.handleChange}/>
                 </div>
 
-                <div className="generate-contract-div-info">
+                <div className="generate-contract-div-info-right">
                   <label className="generate-contract-label-question">Policy Dates: </label>
-                  <input type="text" className=""value={this.state.insurance}
+                  <input type="text" className="generate-contract-date-input" value={this.state.insurance}
                   name="insurance" onChange={this.handleChange}/>
-                  <label className="generate-contract-label-question">to</label>
-                  <input type="text" className=""value={this.state.insurance}
+                  <label className="generate-contract-label-question-date">to</label>
+                  <input type="text" className="generate-contract-date-input" value={this.state.insurance}
                   name="insurance" onChange={this.handleChange}/>
                 </div>
 
-                <div className="generate-contract-div-info">
+                <div className="generate-contract-div-info-right">
                   <label className="generate-contract-label-question">Address: </label>
-                  <input type="text" className=""value={this.state.address}
+                  <input type="text" className="generate-contract-address-input" value={this.state.address}
                   name="address" onChange={this.handleChange}/>
                 </div>
 
-                <div className="generate-contract-div-info">
+                <div className="generate-contract-div-info-right">
                   <label className="generate-contract-label-question">Name: </label>
-                  <input type="text" className=""value={this.state.name}
+                  <input type="text" className="generate-contract-name-input" value={this.state.name}
                   name="name" onChange={this.handleChange}/>
                 </div>
 
