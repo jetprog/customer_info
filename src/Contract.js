@@ -303,7 +303,7 @@ class Contract extends Component {
             </div>
           </div>
 
-          <div>
+          <div className="generate-contract-section-right-space">
             <div className="generate-contract-grid-container">
               <div className="item1"><input className="generate-contract-checkbox" type="checkbox"/></div>
               <div className="item2">
@@ -316,7 +316,7 @@ class Contract extends Component {
             </div>
           </div>
 
-          <div>
+          <div className="generate-contract-section-right-space">
             <div className="generate-contract-grid-container">
               <div className="item1"><input className="generate-contract-checkbox" type="checkbox"/></div>
               <div className="item2">
@@ -329,14 +329,14 @@ class Contract extends Component {
             </div>
           </div>
 
-          <div>
+          <div className="generate-contract-section-right-space">
             <div className="generate-contract-grid-container">
               <div className="item1"><input className="generate-contract-checkbox" type="checkbox"/></div>
               <div className="item2"><h2>HOQ Package Needed</h2></div>
             </div>
           </div>
 
-          <div>
+          <div className="generate-contract-section-right-space">
             <div className="generate-contract-grid-container">
               <div className="item1"><input className="generate-contract-checkbox" type="checkbox"/></div>
               <div className="item2">
@@ -350,14 +350,14 @@ class Contract extends Component {
             </div>
           </div>
 
-          <div>
+          <div className="generate-contract-section-right-space">
             <div className="generate-contract-grid-container">
               <div className="item1"><input className="generate-contract-checkbox" type="checkbox"/></div>
               <div className="item2"><h2>MSA Needed</h2></div>
             </div>
           </div>
 
-          <div>
+          <div className="">
             <div className="generate-contract-grid-container">
               <div className="item1"><input className="generate-contract-checkbox" type="checkbox"/></div>
               <div className="item2"><h2>Credit Repair Only</h2></div>
